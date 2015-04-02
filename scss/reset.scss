@@ -73,18 +73,19 @@ strong {
   font-weight: 700;
 }
 
-h1, h2, h3 {
-  font-weight: 300;
-}
-
 h2 {
   font-size: 24px;
   margin-bottom: 6px;
+  font-weight: 300;
 }
 
 h3 {
-  font-weight: 500;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 .centered {
@@ -190,4 +191,23 @@ dl {
 
 .breathe {
   padding: 60px;
+}
+
+.breathe-bottom {
+  margin-bottom: 12px;
+}
+
+.meta {
+  font-size: 16px;
+  font-style: italic;
+}
+
+.button {
+  display: inline-block;
+  margin: 24px 0 0 0;
+  background: #16222A;
+  padding: 6px 12px;
+  border-radius: 3px;
+  border: 2px solid rgba(111, 124, 130, 0.6);
+  color: #fff;
 }
