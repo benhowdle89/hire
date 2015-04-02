@@ -1,0 +1,19 @@
+{
+  "name": "hire",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "watch-sass": "sass --watch scss/app.scss:css/app.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/benhowdle89/hire.git"
+  },
+  "author": "Ben Howdle <hello@benhowdle.im> (http://benhowdle.im/)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benhowdle89/hire/issues"
+  },
+  "homepage": "https://github.com/benhowdle89/hire"
+}
