@@ -71,6 +71,9 @@ h3 {
 h4 {
   font-size: 18px; }
 
+blockquote {
+  font-style: italic; }
+
 .centered {
   margin: auto;
   text-align: center; }
