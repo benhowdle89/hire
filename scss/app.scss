@@ -1,5 +1,10 @@
 @import "reset";
 
+@mixin img-frame {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.42), 0 0 1px rgba(0, 0, 0, 0.12), inset 0 -1px 2px rgba(14, 60, 86, 0.1);
+  border-radius: 6px;
+}
+
 .content {
     background: linear-gradient(90deg, #16222A 10%, #3A6073 90%);
     color: #c7cfd4;
@@ -9,8 +14,7 @@
     .picture {
     	padding-right: 60px;
         img {
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.42), 0 0 1px rgba(0, 0, 0, 0.12), inset 0 -1px 2px rgba(14, 60, 86, 0.1);
-            border-radius: 6px;
+            @include img-frame();
             max-width: 180px;
         }
     }
@@ -26,4 +30,48 @@
     h3 {
         color: #fff;
     }
+}
+
+.sell {
+  img {
+    @include img-frame();
+  }
+}
+
+.flag{
+  display:table;
+  width:auto;
+  table-layout: fixed;
+  margin-bottom: 24px;
+}
+
+.flag__image, .flag__body{
+  display:table-cell;
+  vertical-align:middle;
+  
+  .flag--top &{
+    vertical-align:top;
+  }
+  
+  .flag--bottom &{
+    vertical-align:bottom;
+  }
+}
+
+.flag__image {
+  width: 10%;
+  
+  > img{
+    display:block;
+  }
+  
+  .flag--rev &{
+    padding-right:0;
+    padding-left:10px;
+  }
+}
+
+.flag__body{
+  width:100%;
+  padding-left:24px;
 }

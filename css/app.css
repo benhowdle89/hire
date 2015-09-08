@@ -190,3 +190,33 @@ dl {
   .content h2,
   .content h3 {
     color: #fff; }
+
+.sell img {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.42), 0 0 1px rgba(0, 0, 0, 0.12), inset 0 -1px 2px rgba(14, 60, 86, 0.1);
+  border-radius: 6px; }
+
+.flag {
+  display: table;
+  width: auto;
+  table-layout: fixed;
+  margin-bottom: 24px; }
+
+.flag__image, .flag__body {
+  display: table-cell;
+  vertical-align: middle; }
+  .flag--top .flag__image, .flag--top .flag__body {
+    vertical-align: top; }
+  .flag--bottom .flag__image, .flag--bottom .flag__body {
+    vertical-align: bottom; }
+
+.flag__image {
+  width: 10%; }
+  .flag__image > img {
+    display: block; }
+  .flag--rev .flag__image {
+    padding-right: 0;
+    padding-left: 10px; }
+
+.flag__body {
+  width: 100%;
+  padding-left: 24px; }
